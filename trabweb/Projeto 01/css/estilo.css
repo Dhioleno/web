@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+    font-size: 1em;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(238, 121, 203, 0.8);
+    z-index: 2;
+    position: relative;
+}
+img{
+    max-width:100%;
+	height:auto;
+}
+header .logo {
+    
+    position: absolute;
+    left: 85%;
+    width: 100%;
+    height: 600px;
+    background-size: 150px;
+    margin: auto;
+  
+}
+#logotipo {
+    border-radius: 50%;
+    
+}
+header .container {
+    position: relative;
+}
+
+#menu {
+    margin: 12px 0;
+}
+
+#menu li {
+    display: inline-block;
+    font-family: "OpenSans";
+}
+
+#menu li.search {
+    width: 182px;
+}
+
+#menu li.search input {
+    background-color: #656565;
+    color: #fff;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 8px;
+}
+
+#menu li.search ::-webkit-input-placeholder {
+    color: #fff;
+}
+
+#menu li.search button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 3px;
+    top: 7px;
+}
+
+#menu li.search button i {
+    font-size: 14px;
+    color: rgba(255, 255, 255, .5);
+}
+
+#menu li a {
+    color: #FFF;
+    font-size: 16px;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+#menu li.search .input-group {
+    top: 8px;
+}
+
+#banner {
+    width: 100%;
+    height: 728px;
+    position: relative;
+    background: url("../imagens/img4.jpg") no-repeat;
+    margin: auto;
+    background-size: 1800px;
+    left: 0%;
+    right: 0%;
+}
+
+
+/* parte do carrosel #item{}*/
+
+#depoimentos {
+    background-color: #5E299A;
+    width: 100%;
+    height: 600px;
+    background-size: 150px;
+    margin: auto;
+
+}
+
+#depoimentos h3 {
+    color: #FDE092;
+    text-transform: uppercase;
+    font-family: 'OpenSans-Light';
+    font-size: 64px;
+    margin-top: 0px;
+}
+
+.pessoas{
+    display: grid;
+    border-radius: 50%;
+    grid-template-areas: "pessoa1 pessoa2 pessoa3" ;
+    
+    font-size: 64px;
+
+}
+.container .pessoas .pessoa2{
+    border-radius: 50%;
+}
+#depoimentos p {
+    grid-template-columns: 1fr 1fr;
+    color: #f8c332;
+    text-transform: uppercase;
+    font-family: 'OpenSans-Light';
+    font-size: 18px;
+    margin-top: 36px;
+}
+
+#tec-ling {
+    background-color: #7167fa;
+    text-align: center;
+    margin-top: 100px;
+    margin: auto;
+}
+
+
+#tec-ling h1 {
+    color: #e05998;
+    font-family: 'OpenSans-Light';
+    font-size: 48px;
+    text-align: center;
+}
+.col-md-4 {
+    display: grid;
+    grid-template-areas: "tec p" ;
+}
+#tec-ling h2 {
+    color: #f1f0f3;
+    font-family: 'OpenSans-Light';
+    font-size: 36px;
+
+}
+
+#tec-ling p {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#dicas h1 {
+    color: #7167fa;
+    font-family: 'OpenSans-Light';
+    font-size: 48px;
+    text-align: center;
+}
+
+#dicas h3 {
+    color: #7167fa;
+    font-family: 'OpenSans-Light';
+    font-size: 36px;
+    text-align: left;
+}
+
+footer {
+    margin-top: 110px;
+}
+
+footer .row {
+    width: 100%;
+}
+
+footer .row h4 {
+    color: #7167fa;
+    font-family: 'OpenSans-Light';
+    font-size: 36;
+    text-align: left;
+}
+
+footer .row p {
+    line-height: 35px;
+    margin-bottom: 0;
+    color: #7167fa;
+    font-family: 'OpenSans-Light';
+    font-size: 36;
+}
+
+footer .row-verde {
+    height: 200px;
+    background-color: #4fd898;
+}
