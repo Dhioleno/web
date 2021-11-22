@@ -171,15 +171,24 @@ header .container {
     color: #ffffff;
     font-size: 30px;
 }
-
-#dicas h1 {
+.container{
+    display: grid;
+    grid-template-areas: " dica" ;
+}
+.dicas{
+    background-color: #f7a9cd;
+}
+.dicas h1 {
+    
     color: #7167fa;
     font-family: 'OpenSans-Light';
     font-size: 48px;
     text-align: center;
 }
 
-#dicas h3 {
+.dicas h3 {
+    width: 100%;
+    height: 400px;
     color: #7167fa;
     font-family: 'OpenSans-Light';
     font-size: 36px;
@@ -187,7 +196,7 @@ header .container {
 }
 
 footer {
-    margin-top: 110px;
+    margin-top: auto;
 }
 
 footer .row {

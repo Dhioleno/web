@@ -145,9 +145,46 @@
 
         </div>
     </section>
+    <style>
+        *{
+            margin: 0px;
+            padding: opx;
 
+        }
+    .galeria{
+        margin: 10px;
+        width: 500px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+    }
+    .dica{
+        position: absolute;
+        opacity: 0;
+        animation-name: animacao;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    
+
+    @keyframes animacao {
+        25%{
+            opacity: 1;
+            transform:scale(1.1,1.1);
+        }
+        50%{
+            opacity: 0;
+        }
+    }
+    /* .dica:nth-child(1){
+        
+    } */
+    .dica:nth-child(2){
+        animation-delay: 6s;
+    }
+    </style>
     <section>
-        <div id="dicas">
+        <div class="dicas">
 
             <div class="container">
 
@@ -155,15 +192,15 @@
                     <h1>DICAS</h2>
                 </div>
 
-                <div class="row">
-                    <img src="imagens/img8.jpg" alt="dica1">
-                    <h3>ETC ETC ETC</h3>
-
+                <div class="galeria">
+                    <img class="dica" src="imagens/img8.jpg">
+                    <img class="dica" src="imagens/img2.png" >
+                    
                 </div>
 
-                <div class="row">
-                    <img src="imagens/img2.png" alt="dica2">
-                    <h3>ETC ETC ETC</h3>
+                <div class="galeria">
+                    <h3 class="dicat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cumque impedit cupiditate pariatur, incidunt nulla, sequi quo quod voluptatibus dignissimos doloremque. Ullam nulla ab ut delectus voluptatem soluta, quam vero.</h3>
+                    <h3 class="dicat">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque eius consequatur quos delectus vero praesentium vitae, ratione perferendis, dolor voluptas error quis ut voluptatibus deleniti quas? Delectus culpa vel alias.</h3>
 
                 </div>
 
